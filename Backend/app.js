@@ -1,5 +1,4 @@
 //Here we are going to configure express and middleware
-
 //import packages
 // create express app
 // configure middleware

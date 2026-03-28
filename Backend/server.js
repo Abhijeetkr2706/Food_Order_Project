@@ -2,7 +2,7 @@
 
 //load environment variables
 //start server
-
+//Import app
 const app=require("./app");
 const connectDatabase=require('./db')
 //import dotenv
