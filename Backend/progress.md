@@ -1,2 +1,2 @@
-Day 16:Reviewed Backend logic
-"Daily update $(date)" 
+Day 17:Configured Database
+Studied Mongoose in depth
