@@ -6,3 +6,4 @@ Worked on Frontend
 Figma-Design
 API Routing
 Database Entries
+Revised the concept
