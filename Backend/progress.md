@@ -7,4 +7,5 @@ Figma-Design
 API Routing
 Database Entries
 Revised the concept
-React setup
+React configuration 
+Revision
