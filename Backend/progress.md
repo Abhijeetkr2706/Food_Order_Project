@@ -12,3 +12,4 @@ Figma Design Improvement
 Code Reviewed
 Revision
 Revised the concepts for payment intergration
+Razorpay docs -Reading
