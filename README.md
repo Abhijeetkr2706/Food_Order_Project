@@ -4,6 +4,7 @@ A scalable and user-friendly Food Ordering Web Application that enables users to
 
 Overview
 
+
 This project simulates a real-world food delivery system where customers can browse dishes, add items to their cart, and complete orders seamlessly. It also includes backend APIs for handling authentication, product management, and order processing.
 
 
