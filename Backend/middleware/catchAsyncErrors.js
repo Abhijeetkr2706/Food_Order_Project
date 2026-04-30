@@ -2,8 +2,7 @@
 // Normally when we use async/await in Express controllers,
 // we need to wrap them in try/catch blocks to catch errors.
 
-// Instead of writing try/catch in every controller,
-// we create this reusable function.
+
 
 // It takes a controller function as an argument
 module.exports = (func) => (req, res, next) =>
