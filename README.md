@@ -10,6 +10,8 @@ This project simulates a real-world food delivery system where customers can bro
 
 ✨ Key Features
 
+
+
 🔐 Secure User Authentication (JWT-based)
 🍔 Dynamic Food Menu with Categories
 🛒 Cart Management System
