@@ -3,7 +3,7 @@ const router = express.Router();
 const authController = require("../controllers/authController");
 const cartController = require("../controllers/cartController");
 
-// Add to cart
+
 router.post("/add-to-cart", cartController.addItemToCart);
 
 // Update cart item quantity
