@@ -17,9 +17,9 @@ exports.getAllFoodItems = catchAsync(async (req, res, next) => {
   });
 });
 
-// /v1/eats/stores/{store_id}/menus
+
 exports.createFoodItem = catchAsync(async (req, res, next) => {
-  // handle optional imageUrl input by converting to images array
+
   const body = { ...req.body };
   if (body.imageUrl) {
     body.images = [
