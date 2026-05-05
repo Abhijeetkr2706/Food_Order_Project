@@ -8,7 +8,6 @@ const Email = require("../utils/email");
 const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const sendToken = require("../utils/sendToken");
 
-// Register user
 exports.signup = catchAsyncErrors(async (req, res, next) => {
   const { name, email, password, passwordConfirm, phoneNumber } = req.body;
 
