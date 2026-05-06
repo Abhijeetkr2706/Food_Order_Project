@@ -1,6 +1,4 @@
-// Custom ErrorHandler class
-// This class is used to create our own error objects with a message and status code
-// It extends the default JavaScript Error class
+
 class ErrorHandler extends Error {
   constructor(message, statusCode) {
     // Call the parent (Error) constructor with the error message
