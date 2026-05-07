@@ -1,5 +1,5 @@
 class APIFeatures {
-  // query = Product.find()
+
 
   constructor(query, queryStr) {
     this.query = query;
