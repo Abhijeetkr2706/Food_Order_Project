@@ -1,9 +1,6 @@
-// Import custom error handler used to send structured error responses
+
 const ErrorHandler = require("../utils/errorHandler");
 
-// Middleware for Role-Based Authorization
-// This function checks whether the logged-in user has permission
-// to access a particular route based on their role (user, admin, etc.)
 exports.authorizeRoles = (...roles) => {
 
   // The function returns a middleware
