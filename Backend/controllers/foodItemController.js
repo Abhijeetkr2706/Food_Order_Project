@@ -30,7 +30,6 @@ exports.createFoodItem = catchAsync(async (req, res, next) => {
     ];
     delete body.imageUrl;
   }
-
   const fooditem = await Fooditem.create(body);
   res.status(201).json({
     status: "success",
@@ -59,7 +58,6 @@ exports.updateFoodItem = catchAsync(async (req, res, next) => {
       runValidators: true,
     },
   );
-
   if (!foodItem)
     return next(new ErrorHandler("No document found with that ID", 404));
 
