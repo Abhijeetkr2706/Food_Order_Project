@@ -3,8 +3,7 @@ const ErrorHandler = require("../utils/errorHandler");
 
 exports.authorizeRoles = (...roles) => {
 
-  // The function returns a middleware
-  // Middleware runs before the actual controller
+
   return (req, res, next) => {
 
     // First check if user exists in request
