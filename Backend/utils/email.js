@@ -1,10 +1,10 @@
-// Import nodemailer to send emails from Node.js
+
 const nodemailer = require("nodemailer");
 
 // Import pug template engine to create HTML email templates
 const pug = require("pug");
 
-// Convert HTML email to plain text version (some email clients require this)
+
 const htmlToText = require("html-to-text");
 
 // Email class used to send different types of emails to users
