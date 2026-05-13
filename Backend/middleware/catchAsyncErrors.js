@@ -1,10 +1,6 @@
-// This utility is used to handle errors in async functions automatically.
-// Normally when we use async/await in Express controllers,
-// we need to wrap them in try/catch blocks to catch errors.
 
 
 
-// It takes a controller function as an argument
 module.exports = (func) => (req, res, next) =>
 
   // Promise.resolve ensures that the function runs as a promise
