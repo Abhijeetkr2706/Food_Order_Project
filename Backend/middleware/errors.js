@@ -1,9 +1,7 @@
-// Import custom ErrorHandler class used to create structured errors
+
 const ErrorHandler = require("../utils/errorHandler");
 
-// Global Error Handling Middleware
-// This middleware catches all errors coming from controllers or other middlewares
-// and sends a proper response to the client
+
 module.exports = (err, req, res, next) => {
 
   // If error does not contain a status code,
