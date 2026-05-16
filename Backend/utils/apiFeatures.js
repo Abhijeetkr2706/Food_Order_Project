@@ -33,11 +33,6 @@ class APIFeatures {
 
     console.log(queryCopy);
 
-    //{ price: { gte: '1', lte: '200' } }
-
-    //this.query = this.query.find(queryCopy);
-
-    // Advance filter for price , ratings etc
     let queryStr = JSON.stringify(queryCopy);
 
     queryStr = queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (match) => `$${match}`);
