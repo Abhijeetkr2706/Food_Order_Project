@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-// Function to create JWT token and send it to the client
+
 const sendToken = (user, statusCode, res) => {
 
   // Generate JWT token using the method defined in the user model
