@@ -39,10 +39,7 @@ class APIFeatures {
 
     console.log(queryStr);
 
-    //{ price: { gte: '1', lte: '200' } }
-    // gte , lte etc are mongo operators and each mongo operator starts with $ sign eg $lte
-    // so we have to add $ sign  $lte and $gte . Hence we replace as above
-    // console.log(queryCopy);
+  
 
     this.query = this.query.find(JSON.parse(queryStr));
 
