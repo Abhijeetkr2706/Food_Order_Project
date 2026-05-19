@@ -3,7 +3,6 @@ const jwt = require("jsonwebtoken");
 
 const sendToken = (user, statusCode, res) => {
 
-  // Generate JWT token using the method defined in the user model
   const token = user.getJWTToken();
 
   // Options for the cookie where the token will be stored
