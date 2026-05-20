@@ -60,9 +60,7 @@ class APIFeatures {
     // Apply the sorting query to the APIFeatures
     this.query = this.query.sort(sortQuery);
 
-    //db.sar.find({“Last_Name”:{$gte:“C”}})
-    //this.query = this.query.find({ 'queryStr.price': { $gte: '900' } });
-    //console.log(this.query);
+
     return this;
   }
 
