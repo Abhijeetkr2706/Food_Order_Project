@@ -4,7 +4,7 @@ const foodSchema = new mongoose.Schema({
   name: {
     type: String,
     required: [true, "Please enter FoodItem name"],
-    trim: true, //to remove whitespace
+    trim: true, 
     maxLength: [100, "FoodItem name cannot exceed 100 characters "],
   },
   price: {
