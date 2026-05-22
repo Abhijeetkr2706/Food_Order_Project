@@ -4,10 +4,8 @@ const jwt = require("jsonwebtoken");
 const sendToken = (user, statusCode, res) => {
 
   const token = user.getJWTToken();
-
-  // Options for the cookie where the token will be stored
   const cookieOptions = {
-    // Cookie expiration time (converted from days to milliseconds)
+
     expires: new Date(
       Date.now() + process.env.JWT_EXPIRES_TIME * 24 * 60 * 60 * 1000
     ),
