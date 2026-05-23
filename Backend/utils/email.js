@@ -1,17 +1,14 @@
 
 const nodemailer = require("nodemailer");
 
-// Import pug template engine to create HTML email templates
 const pug = require("pug");
 
 
 const htmlToText = require("html-to-text");
 
-// Email class used to send different types of emails to users
+
 module.exports = class Email {
 
-  // Constructor runs whenever we create a new Email object
-  // It receives user data and a URL (usually used for password reset or verification)
   constructor(user, url) {
 
     // Receiver email address
