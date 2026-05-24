@@ -10,12 +10,9 @@ const sendToken = (user, statusCode, res) => {
       Date.now() + process.env.JWT_EXPIRES_TIME * 24 * 60 * 60 * 1000
     ),
 
-    // httpOnly means the cookie cannot be accessed by JavaScript in the browser
-    // This helps protect the token from XSS attacks
     httpOnly: true,
   };
 
-  // Send the JWT token as a cookie to the client
   res.cookie("jwt", token, cookieOptions);
 
   // Remove password from the user object before sending response
