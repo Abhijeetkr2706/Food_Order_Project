@@ -28,8 +28,7 @@ module.exports = class Email {
   // This transporter is responsible for actually sending the email
   newTransport() {
 
-    // In production we might use services like SendGrid
-    // but here we configure a custom SMTP server
+
 
     return nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
