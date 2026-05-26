@@ -14,7 +14,7 @@ connectDatabase();
 
 const seedFooditems = async () => {
   try {
-    await Fooditem.deleteMany(); //will delete all the fooditems
+    await Fooditem.deleteMany(); 
     console.log("FoodItems are deleted");
     await Fooditem.insertMany(fooditems);
     console.log("All FoodItems are added.");
