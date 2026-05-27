@@ -15,8 +15,6 @@ const sendToken = (user, statusCode, res) => {
 
   res.cookie("jwt", token, cookieOptions);
 
-  // Remove password from the user object before sending response
-  // This ensures the password is never exposed in API responses
   user.password = undefined;
 
   // Send response to client with success status and token
