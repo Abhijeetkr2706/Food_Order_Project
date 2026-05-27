@@ -11,13 +11,13 @@ module.exports = class Email {
 
   constructor(user, url) {
 
-    // Receiver email address
+  
     this.to = user.email;
 
-    // Extract first name from full name (for personalization)
+  
     this.firstName = user.name.split(" ")[0];
 
-    // URL used in email (example: password reset link)
+  
     this.url = url;
 
     // Sender email address from environment variables
