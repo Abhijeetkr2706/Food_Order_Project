@@ -23,9 +23,6 @@ module.exports = class Email {
     // Sender email address from environment variables
     this.from = `OrderIt <${process.env.EMAIL_FROM}>`;
   }
-
-  // Create a transporter that connects to the email server
-  // This transporter is responsible for actually sending the email
   newTransport() {
 
 
