@@ -19,8 +19,6 @@ module.exports = class Email {
 
   
     this.url = url;
-
-    // Sender email address from environment variables
     this.from = `OrderIt <${process.env.EMAIL_FROM}>`;
   }
   newTransport() {
