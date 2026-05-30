@@ -35,9 +35,6 @@ module.exports = class Email {
       },
     });
   }
-
-  // Main function used to send emails
-  // It receives template name and email subject
   async send(template, subject) {
 
     // Render HTML email using pug template
