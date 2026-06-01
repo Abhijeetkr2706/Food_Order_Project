@@ -27,7 +27,6 @@ class APIFeatures {
 
     console.log(queryCopy);
 
-    // Removing fields from the query
     const removeFields = ["keyword", "limit", "page"];
     removeFields.forEach((el) => delete queryCopy[el]);
 
