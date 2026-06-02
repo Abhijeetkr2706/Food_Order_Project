@@ -36,9 +36,6 @@ module.exports = class Email {
     });
   }
   async send(template, subject) {
-
-    // Render HTML email using pug template
-    // The template receives dynamic data such as name and URL
     const html = pug.renderFile(`${__dirname}/../view/${template}.pug`, {
       firstName: this.firstName,
       url: this.url,
