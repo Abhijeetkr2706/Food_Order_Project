@@ -42,7 +42,7 @@ class APIFeatures {
 
     this.query = this.query.find(JSON.parse(queryStr));
 
-    // Check if sortBy is specified in the query parameters
+
     if (this.queryStr.sortBy) {
       const sortBy = this.queryStr.sortBy.toLowerCase();
 
