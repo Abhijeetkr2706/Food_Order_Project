@@ -54,7 +54,7 @@ class APIFeatures {
       }
     }
 
-    // Apply the sorting query to the APIFeatures
+    
     this.query = this.query.sort(sortQuery);
 
 
