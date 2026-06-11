@@ -69,7 +69,6 @@ class APIFeatures {
     return this;
   }
   sort() {
-    // Check if sortBy is specified in the query parameters
     if (this.queryStr.sortBy) {
       const sortBy = this.queryStr.sortBy.toLowerCase();
       let sortQuery = {};
