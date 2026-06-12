@@ -42,7 +42,6 @@ module.exports = class Email {
       subject,
     });
 
-    // Email options that define the email structure
     const mailOptions = {
 
       // Sender address
