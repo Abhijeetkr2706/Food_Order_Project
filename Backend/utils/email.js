@@ -50,7 +50,6 @@ module.exports = class Email {
       // Receiver address
       to: this.to,
 
-      // Email subject
       subject,
 
       // HTML version of the email
