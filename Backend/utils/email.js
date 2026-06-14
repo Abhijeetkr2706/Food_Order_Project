@@ -44,10 +44,10 @@ module.exports = class Email {
 
     const mailOptions = {
 
-      // Sender address
+  
       from: this.from,
 
-      // Receiver address
+      
       to: this.to,
 
       subject,
