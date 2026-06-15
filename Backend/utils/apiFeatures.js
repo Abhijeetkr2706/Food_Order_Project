@@ -73,7 +73,6 @@ class APIFeatures {
       const sortBy = this.queryStr.sortBy.toLowerCase();
       let sortQuery = {};
 
-      // Sort by ratings (highest to lowest)
       if (sortBy === "ratings") {
         sortQuery = { ratings: -1 };
       }
