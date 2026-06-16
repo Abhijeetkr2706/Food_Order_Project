@@ -81,7 +81,6 @@ class APIFeatures {
         sortQuery = { numOfReviews: -1 };
       }
 
-      // Apply the sorting query to the APIFeatures
       this.query = this.query.sort(sortQuery);
     }
 
