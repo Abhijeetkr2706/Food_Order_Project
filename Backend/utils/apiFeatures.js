@@ -76,7 +76,6 @@ class APIFeatures {
       if (sortBy === "ratings") {
         sortQuery = { ratings: -1 };
       }
-      // Sort by reviews (highest to lowest)
       else if (sortBy === "reviews") {
         sortQuery = { numOfReviews: -1 };
       }
