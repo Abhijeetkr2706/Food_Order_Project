@@ -17,7 +17,7 @@ const sendToken = (user, statusCode, res) => {
 
   user.password = undefined;
 
-  // Send response to client with success status and token
+ 
   res.status(statusCode).json({
     success: true,
     token,
