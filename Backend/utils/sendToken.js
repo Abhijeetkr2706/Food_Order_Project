@@ -24,6 +24,4 @@ const sendToken = (user, statusCode, res) => {
     data: { user },
   });
 };
-
-// Export this function so it can be used in authentication controllers
 module.exports = sendToken;
