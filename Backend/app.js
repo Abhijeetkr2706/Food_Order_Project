@@ -1,6 +1,6 @@
 
 //import packages
-// create express app
+
 // configure middleware
 // Export the app to use it wherever it is needed.
 
