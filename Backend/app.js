@@ -1,6 +1,4 @@
 
-//import packages
-
 // configure middleware
 // Export the app to use it wherever it is needed.
 
