@@ -1,5 +1,4 @@
 
-// configure middleware
 // Export the app to use it wherever it is needed.
 
 const express=require('express');
