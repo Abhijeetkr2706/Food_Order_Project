@@ -52,10 +52,8 @@ module.exports = class Email {
 
       subject,
 
-      // HTML version of the email
       html,
 
-      // Plain text version of the email
       text: htmlToText.convert(html),
     };
 
