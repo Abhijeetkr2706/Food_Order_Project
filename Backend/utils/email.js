@@ -79,7 +79,6 @@ module.exports = class Email {
 
 
 
-// Notes for development
 
 // Mailtrap is commonly used during development
 // It captures emails instead of actually sending them to real users
