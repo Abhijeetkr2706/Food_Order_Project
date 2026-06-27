@@ -57,7 +57,6 @@ module.exports = class Email {
       text: htmlToText.convert(html),
     };
 
-    // Send email using configured transporter
     await this.newTransport().sendMail(mailOptions);
   }
 
