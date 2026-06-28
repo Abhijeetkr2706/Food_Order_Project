@@ -76,11 +76,6 @@ module.exports = class Email {
   }
 };
 
-
-
-
-// Mailtrap is commonly used during development
-// It captures emails instead of actually sending them to real users
 // This prevents accidental emails being sent to customers
 
 // Example service:
