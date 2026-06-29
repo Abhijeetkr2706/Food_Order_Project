@@ -76,7 +76,6 @@ module.exports = class Email {
   }
 };
 
-// This prevents accidental emails being sent to customers
 
 // Example service:
 // https://mailtrap.io
