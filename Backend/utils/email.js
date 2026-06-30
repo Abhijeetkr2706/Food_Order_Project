@@ -77,7 +77,6 @@ module.exports = class Email {
 };
 
 
-// Example service:
 // https://mailtrap.io
 
 // Another service used in production:
