@@ -60,7 +60,6 @@ module.exports = class Email {
     await this.newTransport().sendMail(mailOptions);
   }
 
-  // Function used to send welcome email after user registers
   async sendWelcome() {
 
     await this.send("welcome", "welcome to the Order It!");
