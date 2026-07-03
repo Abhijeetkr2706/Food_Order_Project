@@ -65,7 +65,7 @@ module.exports = class Email {
     await this.send("welcome", "welcome to the Order It!");
   }
 
-  // Function used to send password reset email
+  
   async sendPasswordReset() {
 
     await this.send(
