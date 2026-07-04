@@ -77,7 +77,7 @@ module.exports = class Email {
 
 
 
-// Another service used in production:
+
 // SendGrid
 // SendGrid provides an SMTP server to send emails reliably
 
