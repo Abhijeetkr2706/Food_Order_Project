@@ -79,7 +79,7 @@ module.exports = class Email {
 
 
 
-// SendGrid provides an SMTP server to send emails reliably
+
 
 // For testing you can also use mailsac
 // Example: anything@mailsac.com will receive emails instantly
