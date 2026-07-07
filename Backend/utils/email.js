@@ -80,6 +80,4 @@ module.exports = class Email {
 
 
 
-
-// For testing you can also use mailsac
 // Example: anything@mailsac.com will receive emails instantly
