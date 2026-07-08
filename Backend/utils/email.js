@@ -75,9 +75,3 @@ module.exports = class Email {
   }
 };
 
-
-
-
-
-
-// Example: anything@mailsac.com will receive emails instantly
