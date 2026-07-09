@@ -21,7 +21,6 @@ const foodSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
-  //images are array of an object and each object contains two things, 1. id of that img and 2. url of that img.
   images: [
     {
       public_id: {
