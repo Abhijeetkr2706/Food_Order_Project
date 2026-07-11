@@ -23,7 +23,6 @@ exports.signup = catchAsyncErrors(async (req, res, next) => {
   sendToken(user, 200, res);
 });
 
-// Login
 exports.login = catchAsyncErrors(async (req, res, next) => {
   const { email, password } = req.body;
 
