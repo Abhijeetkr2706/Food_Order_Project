@@ -90,8 +90,6 @@ exports.protect = catchAsyncErrors(async (req, res, next) => {
 
   next();
 });
-
-// Get profile
 exports.getUserProfile = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findById(req.user.id);
 
