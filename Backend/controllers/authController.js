@@ -45,7 +45,6 @@ exports.login = catchAsyncErrors(async (req, res, next) => {
   sendToken(user, 200, res);
 });
 
-// Protect Route
 exports.protect = catchAsyncErrors(async (req, res, next) => {
   let token;
 
