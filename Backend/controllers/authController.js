@@ -154,8 +154,6 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
     );
   }
 });
-
-// Reset Password
 exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
   const hashedToken = crypto
     .createHash("sha256")
