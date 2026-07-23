@@ -119,7 +119,6 @@ exports.updatePassword = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-// Forgot Password
 exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findOne({ email: req.body.email });
 
