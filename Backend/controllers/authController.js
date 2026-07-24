@@ -178,8 +178,6 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 
   sendToken(user, 200, res);
 });
-
-// Logout
 exports.logout = catchAsyncErrors(async (req, res, next) => {
   res.cookie("jwt", null, {
     expires: new Date(Date.now()),
