@@ -59,9 +59,6 @@ async function addItemToCart(req, res) {
   } catch (error) {
     res.status(500).json({ message: "Server error", error });
   }
-}
-
-// Update Cart
 
 async function updateCartItemQuantity(req, res) {
   const { userId, foodItemId, quantity } = req.body;
