@@ -98,8 +98,6 @@ async function updateCartItemQuantity(req, res) {
   }
 }
 
-//Delete cart
-
 async function deleteCartItem(req, res) {
   const { userId, foodItemId } = req.body;
 
