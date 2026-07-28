@@ -140,7 +140,6 @@ async function deleteCartItem(req, res) {
   }
 }
 
-//Fetch cart Item
 
 async function getCartItem(req, res) {
   const userId = req.user;
