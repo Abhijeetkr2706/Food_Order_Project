@@ -122,7 +122,6 @@ async function deleteCartItem(req, res) {
     } else {
       await cart.save();
 
-      // Fetch and return the populated cart
       const updatedCart = await Cart.findOne({ user: userId })
         .populate({
           path: "items.foodItem",
