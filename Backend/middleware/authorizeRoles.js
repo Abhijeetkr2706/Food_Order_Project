@@ -5,9 +5,6 @@ exports.authorizeRoles = (...roles) => {
 
 
   return (req, res, next) => {
-
-    // First check if user exists in request
-    // This usually means the user has passed authentication middleware
     if (!req.user) {
       return next(new ErrorHandler("Not authenticated", 401));
     }
