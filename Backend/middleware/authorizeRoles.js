@@ -8,7 +8,6 @@ exports.authorizeRoles = (...roles) => {
     if (!req.user) {
       return next(new ErrorHandler("Not authenticated", 401));
     }
-    // then access should be denied
     if (!roles.includes(req.user.role)) {
 
       return next(
