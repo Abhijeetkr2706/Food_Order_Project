@@ -18,7 +18,7 @@ exports.authorizeRoles = (...roles) => {
       );
     }
 
-    // If role matches allowed roles
+
     // move to next middleware or controller
     next();
   };
