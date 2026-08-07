@@ -18,8 +18,6 @@ exports.authorizeRoles = (...roles) => {
       );
     }
 
-
-    // move to next middleware or controller
     next();
   };
 };
