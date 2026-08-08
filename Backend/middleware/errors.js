@@ -3,9 +3,6 @@ const ErrorHandler = require("../utils/errorHandler");
 
 
 module.exports = (err, req, res, next) => {
-
-  // If error does not contain a status code,
-  // we assign 500 which means Internal Server Error
   err.statusCode = err.statusCode || 500;
 
   // DEVELOPMENT MODE
