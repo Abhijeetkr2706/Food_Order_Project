@@ -5,7 +5,6 @@ const ErrorHandler = require("../utils/errorHandler");
 module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
 
-  // so developers can easily debug the issue
   if (process.env.NODE_ENV === "DEVELOPMENT") {
 
     res.status(err.statusCode).json({
