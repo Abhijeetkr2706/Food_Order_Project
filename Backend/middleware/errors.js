@@ -13,7 +13,6 @@ module.exports = (err, req, res, next) => {
   
       error: err,
 
-      // Error message
       errMessage: err.message,
 
       // Stack trace helps developers see where the error happened
