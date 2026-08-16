@@ -19,7 +19,6 @@ module.exports = (err, req, res, next) => {
       stack: err.stack,
     });
   }
-  // In production we should not expose internal error details
   // for security reasons. So we send only necessary information.
   if (process.env.NODE_ENV === "PRODUCTION") {
 
