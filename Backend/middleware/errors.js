@@ -19,7 +19,6 @@ module.exports = (err, req, res, next) => {
       stack: err.stack,
     });
   }
-  // for security reasons. So we send only necessary information.
   if (process.env.NODE_ENV === "PRODUCTION") {
 
     // Create a copy of the error object
