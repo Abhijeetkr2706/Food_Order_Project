@@ -21,7 +21,6 @@ module.exports = (err, req, res, next) => {
   }
   if (process.env.NODE_ENV === "PRODUCTION") {
 
-    // Create a copy of the error object
     let error = { ...err };
 
     // Preserve the original message
