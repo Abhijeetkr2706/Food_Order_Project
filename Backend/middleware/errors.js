@@ -22,8 +22,6 @@ module.exports = (err, req, res, next) => {
   if (process.env.NODE_ENV === "PRODUCTION") {
 
     let error = { ...err };
-
-    // Preserve the original message
     error.message = err.message;
 
     // Handling Mongoose Invalid ObjectId Error
