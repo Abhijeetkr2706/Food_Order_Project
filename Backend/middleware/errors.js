@@ -23,8 +23,6 @@ module.exports = (err, req, res, next) => {
 
     let error = { ...err };
     error.message = err.message;
-
-    // Handling Mongoose Invalid ObjectId Error
     // Example: if someone sends a wrong product id in URL
     if (err.name == "castError") {
       const message = `Resource not found. Invalid: ${err.path}`;
