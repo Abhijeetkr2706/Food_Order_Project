@@ -38,7 +38,6 @@ module.exports = (err, req, res, next) => {
       error = new ErrorHandler(message, 400);
     }
 
-    // Handling MongoDB Duplicate Key Error
     // Example: user tries to register with an email that already exists
     if (err.code === 11000) {
 
