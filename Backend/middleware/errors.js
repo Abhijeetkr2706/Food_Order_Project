@@ -28,8 +28,6 @@ module.exports = (err, req, res, next) => {
       error = new ErrorHandler(message, 400);
     }
 
-    // Handling Mongoose Validation Error
-    // Example: required fields missing or incorrect data format
     if (err.name === "ValidationError") {
 
       // Collect all validation messages
