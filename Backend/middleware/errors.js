@@ -30,7 +30,6 @@ module.exports = (err, req, res, next) => {
 
     if (err.name === "ValidationError") {
 
-      // Collect all validation messages
       const message = Object.values(err.errors).map((value) => value.message);
 
       error = new ErrorHandler(message, 400);
