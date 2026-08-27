@@ -48,8 +48,6 @@ module.exports = (err, req, res, next) => {
 
       error = new ErrorHandler(message, 400);
     }
-
-    // Handling Expired JWT Token
     // This happens when the token has passed its expiration time
     if (err.name === "TokenExpiredError") {
 
