@@ -54,8 +54,6 @@ module.exports = (err, req, res, next) => {
 
       error = new ErrorHandler(message, 400);
     }
-
-    // Send final response to client
     res.status(error.statusCode).json({
       success: false,
 
