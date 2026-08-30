@@ -56,8 +56,6 @@ module.exports = (err, req, res, next) => {
     }
     res.status(error.statusCode).json({
       success: false,
-
-      // Send safe error message
       message: error.message || "Internal Server Error",
     });
   }
