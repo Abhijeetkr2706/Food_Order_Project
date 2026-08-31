@@ -71,16 +71,12 @@ userSchema.pre("save", async function () {
   this.passwordConfirm = undefined;
 
 });
-
-// PASSWORD COMPARE
 userSchema.methods.correctPassword = async function (
   candidatePassword,
   userPassword
 ) {
   return await bcrypt.compare(candidatePassword, userPassword);
 };
-
-// CHECK IF PASSWORD CHANGED AFTER JWT
 userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   if (this.passwordChangedAt) {
     const changedTimestamp = parseInt(
