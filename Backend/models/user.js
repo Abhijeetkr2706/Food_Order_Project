@@ -89,8 +89,6 @@ userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
 
   return false;
 };
-
-// CREATE JWT TOKEN
 userSchema.methods.getJWTToken = function () {
   return jwt.sign(
     { id: this._id },
