@@ -96,8 +96,6 @@ userSchema.methods.getJWTToken = function () {
     { expiresIn: process.env.JWT_EXPIRE }
   );
 };
-
-// PASSWORD RESET TOKEN
 userSchema.methods.createPasswordResetToken = function () {
 
   const resetToken = crypto.randomBytes(32).toString("hex");
